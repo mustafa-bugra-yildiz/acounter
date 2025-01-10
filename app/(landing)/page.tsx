@@ -2,31 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { DollarSign, Server, BarChart, Monitor, CheckCircle } from 'lucide-react'
+import { Server, BarChart, Monitor, CheckCircle } from 'lucide-react'
 
 export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-4 lg:px-6 h-14 flex items-center border-b">
-        <Link className="flex items-center justify-center" href="#">
-          <DollarSign className="h-6 w-6 text-primary" />
-          <span className="ml-2 text-2xl font-bold text-primary">Acounter</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#features">
-            Features
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#api">
-            API
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#pricing">
-            Pricing
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#contact">
-            Contact
-          </Link>
-        </nav>
-      </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-b from-white to-gray-100 flex flex-col items-center">
           <div className="container px-4 md:px-6">
